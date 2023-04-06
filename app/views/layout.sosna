@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DeviceCare: Servis Apple, Android a další</title>
+
+    <!-- AUTOR -->
+    <meta name="author" content="Simon Sosna">
+
+    <!-- SEO -->
+    <meta name="description" content="SEO popis stranky (V PROGRESU)">
+    <meta name="keywords" content="keyword1, keyword2, keyword3">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+    <link rel="icon" type="image/x-icon" href="favicon.icon">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    [css(global)]
+    [css(hlavicka)]
+    [css(paticka)]
+
+
+    <!-- FontAwesome knihovna -->
+    <script src="https://kit.fontawesome.com/f0eefabb97.js" crossorigin="anonymous"></script>
+
+    <!-- Google analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<body>
+    <header>
+<!-- Your header content goes here -->
+
+<div class="header">
+  <!-- HORNI-HEADER -->
+  <div class="horni-header">
+    <div class="social-ikony">
+    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://instagram.com"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+  
+  <!-- STREDNI HEADER -->
+  <div class="stredni-header">
+    <div class="logo">
+      <a href="../index.php">
+        <img src=[img(logo.png)] alt="Phonelogy"/>
+      </a>
+      <h1>Servis mobilních telefonů a jiné elektroniky
+    </div>
+  </div>
+
+  <!-- DOLNÍ HEADER -->
+
+  <div class="dolni-header">
+    <div class="div-dolni-header">
+    <div class="nabidka-menu">
+      <a href="/">Domů</a>
+      <a href="/tisk">3D Tisk</a>
+      <a href="/faq">FAQ</a>
+      <a href="/framework">FRAMEWORK</a>
+    </div>
+  </div>
+</div>
+</div>
+    </header>
+
+    [kontent]
+
+    <footer>
+        <!-- Your footer content goes here -->
+        <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-content">
+      <h3>O DeviceCare.cz</h3>
+      <p>Naše firma se specializuje na opravy mobilních telefonů všech značek a modelů.
+      Máme tým zkušených techniků, kteří dokážou rychle a efektivně opravit nejčastější i složitější problémy s vaším zařízením.
+      </p>
+      <br>
+    </div>
+    <div class="footer-content">
+      <h3>Naše inovativní systémy</h3>
+      <ul>
+        <li><a href="#">Online kontrola stavu opravy</a></li>
+        <li><a href="#">Online rezervovací kalendář</a></li>
+        <li><a href="#">Online kalkulátor výkupní ceny zařízení</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-content">
+      <h3>Kontaktujte nás</h3>
+      <p>České Budějovice<br>Česko, 370 07</p>
+      <p>Telefon: +420 736 515 562<br>Email: phonelogysale@seznam.cz</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2023 DeviceCare. Programováno pomocí HTML, CSS, JS, PHP.</p>
+    <p>Postaveno na custom SosnaMakesPHPGreatAgain Frameworku.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</footer>
+
+    </footer>
+
+</body>
+</html>

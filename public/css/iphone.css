@@ -1,0 +1,119 @@
+
+.container {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+  }
+
+  
+  .title {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: #01303F;
+  }
+  
+  .main {
+    padding: 32px;
+    margin: auto;
+    justify-content: center;
+  }
+  
+  .accordion {
+    max-width: 60%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(1, 48, 63, 0.1);
+    margin: 0 auto; /* Add this line */
+    color: #01303F;
+}
+  
+  .accordion-item {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .accordion-header {
+    background-color: #f5f5f5;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px;
+    position: relative;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title-price {
+    display: flex;
+    align-items: center;
+  }
+  
+  .price {
+    font-size: 16px;
+    font-weight: 600;
+    color: #185509;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 1px solid #01303F;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgb(1, 48, 63, 0.1);
+    margin-left: 16px;
+  }
+  
+  .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .accordion-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .show-button,
+  .hide-button {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #333;
+    border: none;
+    margin-left: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .show-button:hover,
+  .hide-button:hover {
+    background-color: #555;
+  }
+  
+  .show-button:focus,
+  .hide-button:focus {
+    outline: none;
+  }
+  
+  .show-button:active,
+  .hide-button:active {
+    transform: translateY(1px);
+    box-shadow: none;
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .accordion-content p {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  

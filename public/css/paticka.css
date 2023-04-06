@@ -1,0 +1,128 @@
+/* Variables */
+:root {
+    --primary-color: #01303F;
+    --secondary-color: #f9f9f9;
+    --accent-color: #ff9900;
+  }
+  
+  /* Global styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 40px 0;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-content {
+    flex-basis: calc(33.33% - 20px);
+    margin: 0 10px;
+  }
+  
+  .footer-content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-content ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-content ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-content ul li a:hover {
+    color: var(--accent-color);
+  }
+  
+  .footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid var(--secondary-color);
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .social-icons {
+    display: flex;
+    text-align: center;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+    color: var(--secondary-color);
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: var(--accent-color);
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 767px) {
+    .footer-container {
+      flex-wrap: wrap;
+    }
+  
+    .footer-content {
+      flex-basis: 100%;
+      margin-bottom: 40px;
+    }
+    
+    .footer-bottom {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-top: 20px;
+    }
+  
+    .social-icons {
+      margin-top: 20px;
+    }
+  }
+  

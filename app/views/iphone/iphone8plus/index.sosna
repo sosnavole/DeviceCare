@@ -1,0 +1,91 @@
+[css(iphone)]
+
+
+
+<!------------- SEKCE 1 ZACATEK ------------->
+<!-- KALKULACKA VYKUPNI CENY-->
+
+[db-connect]
+<?php
+require_once 'core/Database.php';
+
+use Core\Database;
+
+try {
+    $db = Database::getInstance();
+    $conn = $db->getConnection();
+} catch (PDOException $e) {
+    echo "Error: " . $e->getMessage();
+}
+
+$db = Database::getInstance();
+$conn = $db->getConnection();
+
+$stmt = $conn->prepare("SELECT * FROM iphone13");
+$stmt->execute();
+
+$prices = array();
+while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+    $priceType = $row['PriceType'];
+    $priceValue = $row['PriceValue'];
+    $prices[$priceType] = $priceValue;
+}
+
+$price1 = $prices['Price 1'];
+$price2 = $prices['Price 2'];
+$price3 = $prices['Price 3'];
+?>
+
+<div class="divinero">
+  <main class="main">
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <div class="title-price">
+            <span class="title">Výměna displeje</span>
+            <span class="price"><?php echo $price1; ?>,- Kč</span>
+          </div>
+          <div class="accordion-buttons">
+            <button class="show-button">Více infomací</button>
+            <button class="hide-button">Skrýt</button>
+          </div>
+        </div>
+        <div class="accordion-content">
+          <p>Oprava displeje na iPhone je běžnou údržbou, která se často provádí po poškození displeje, například při pádu nebo nárazu.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <div class="title-price">
+            <span class="title">Výměna baterie</span>
+            <span class="price"><?php echo $price2; ?>,- Kč</span>
+          </div>
+          <div class="accordion-buttons">
+            <button class="show-button">Více informací</button>
+            <button class="hide-button">Skrýt</button>
+          </div>
+        </div>
+        <div class="accordion-content">
+          <p>Text výměna baterie</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <div class="title-price">
+            <span class="title">Výměna zadního skla</span>
+            <span class="price"><?php echo $price3; ?>,- Kč</span>
+          </div>
+          <div class="accordion-buttons">
+            <button class="show-button">Více informací</button>
+            <button class="hide-button">Skrýt</button>
+          </div>
+        </div>
+        <div class="accordion-content">
+          <p>Text výměna zadního skla</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<!------------- SCRIPT IMPORT ------------->
+[js(accordion)]

@@ -1,0 +1,6 @@
+@media only screen and (max-width: 600px) {
+    /* styles for mobile devices */
+    body {
+      font-size: 16px;
+    }
+  }

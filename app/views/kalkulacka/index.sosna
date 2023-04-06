@@ -1,0 +1,78 @@
+[css(vykup)]
+
+
+<main>
+
+<!------------- SEKCE 1 ZACATEK ------------->
+
+<!-- KALKULACKA VYKUPNI CENY-->
+
+  <h1 class="main-title">Online kalkulačka výkupní ceny</h1>
+  <form action="../Backend/vykup_kalkulacka.php" method="post" class="survey-form">
+    <h4 class="main-title-h4">Začněte výběrem značky telefonu.</h4>
+    <div class="form-group">
+      <label for="brand" class="form-label">Značka telefonu:</label>
+      <select id="brand" name="brand" onchange="updateModels(this.value)" class="form-select">
+        <option value="Apple">Apple</option>
+        <option value="Samsung">Samsung</option>
+        <option value="Xiaomi">Google</option>
+      </select>
+    </div>
+    <br>
+    <br>
+    <div class="form-group">
+      <label for="model" class="form-label">Model telefonu:</label>
+      <select id="model" name="model" onchange="updateBackglass(this.value)" class="form-select">
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="damage" class="form-label">Stav telefonu:</label>
+      <select id="damage" name="damage" class="form-select">
+        <option value="none">Žádné známky použití</option>
+        <option value="minor">Bežné opotřebení - lehce poškrábaný displej zadní sklo, rámeček</option>
+        <option value="major">Těžké opotřebení - vrypy na těle telefonu, četně poškrábaný displej a zadní sklo </option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="brokenDisplay" class="form-label">Rozbitý displej:</label>
+      <input type="checkbox" id="brokenDisplay" name="brokenDisplay" class="form-checkbox">
+    </div>
+    <div class="form-group">
+      <label for="cantTurnOn" class="form-label">Telefon nelze zapnout:</label>
+      <input type="checkbox" id="cantTurnOn" name="cantTurnOn" class="form-checkbox">
+    </div>
+    <div class="form-group">
+      <label for="brokenBackglass" id="brokenBackglassLabel" class="form-label" style="display:none;">Rozbité zadní sklo:</label>
+      <input type="checkbox" id="brokenBackglass" name="brokenBackglass" class="form-checkbox" style="display:none;">
+    </div>
+    <div class="form-group">
+      <label for="storage">Velikost uložiště (GB):</label>
+      <select id="storage" name="storage" class="form-select">
+        <option value="16">16</option>
+        <option value="32">32</option>
+        <option value="64">64</option>
+        <option value="128">128</option>
+        <option value="256">256</option>
+        <option value="512">512</option>
+      </select>
+    <div class="form-group">
+      <input type="submit" value="Vypočítat" class="form-submit">
+    </div>
+  </form>
+
+  <br>
+
+  <?php
+
+if (isset($_GET['price'])) {
+  $price = $_GET['price'];
+  echo '<div class="buyback-price">Cena odkupu telefonu: ' . htmlspecialchars($price) . ',- CZK</div>';
+}
+
+?>
+
+<!------------- SCRIPT IMPORT ------------->
+<script src="../js/vykupni-cena.js"></script>
+
+
+</main>

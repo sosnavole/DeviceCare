@@ -1,0 +1,128 @@
+[css(hlavicka-home)]
+[css(home)]
+[css(home_mobil)]
+
+
+<main>
+
+<!-- LEVÉ KONTENT MENU ZAČÁTEK --->
+
+<!-- LEVÉ KONTENT MENU KONEC --->
+
+
+<!------------- ZACATEK Sekce 1 ------------->
+
+<!--Servis/Výkup Call To Action -->
+<section id="section1" data-section="section1"> 
+<div class="content-wrapper">
+<div class="columns">
+  <div class="column">
+      <div class="box-left">
+        <div class="obsah-vlevo">
+          <h2>Odkoupíme váš poškozený iPhone</h2>
+          <p>Máte poškozený iPhone a nemáte pro něj využití?</p>
+          <a href="/kalkulacka" class="cta">Vypočítat výkupní cenu</a>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="box-right">
+      <div class="obsah-vpravo">
+          <h2>Potřebujete opravu zařízení?</h2>
+          <p>Vyberte váš model pro zobrazení servisních úkonů a jejich cen.</p>
+          <div id="menu-container"></div>
+          <button id="back-button" style="display: none;">Začít znovu</button>
+      </div>    
+    </div>
+  </div>
+</div>
+</div>
+
+<!------------- KONEC Sekce 1 ------------->
+
+<!-- Slider obrazku a Nabizene sluzby -->
+<div class="wrapper">
+  <div class="slider-container">
+    <div class="slider">
+        <div class="slides">
+          <div class="slide"><img src="https://source.unsplash.com/800x600/?nature"></div>
+          <div class="slide"><img src="https://source.unsplash.com/800x600/?city"></div>
+          <div class="slide"><img src="https://source.unsplash.com/800x600/?animals"></div>
+        </div>
+        <div class="controls">
+          <button class="prev">&lt;</button>
+          <button class="next">&gt;</button>
+        </div>
+      </div>
+  </div>
+  <div class="content-container">
+    <h1>Námi nabízené služby</h1>
+    <p>Nabízíme širokou škálu služeb oprav, včetně výměny displejů, baterií, opravy poškození vodou a
+    aktualizací softwaru. Používáme pouze vysokokvalitní díly a nejmodernější vybavení.</p>
+    <p>Nabízíme širokou škálu služeb oprav, včetně výměny displejů, baterií, opravy poškození vodou a
+    aktualizací softwaru. Používáme pouze vysokokvalitní díly.</p>
+  </div>
+</div>
+
+<!------------- ZACATEK Sekce 2 ------------->
+<section id="section2" data-section="section2">
+<div class="why-choose-us">
+  <h2>Proč si vybrat nás?</h2>
+  <div class="card-container">
+    <div class="card">
+      <div class="card-header">
+        <h3>Zkušenosti a odbornost</h3>
+      </div>
+      <div class="card-body">
+        <p>Jsme tým zkušených profesionálů s mnohaletými zkušenostmi v našem oboru. Naše odbornost a znalosti nám umožňují poskytovat vysokou kvalitu služeb našim zákazníkům.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h3>Kvalita a spokojenost</h3>
+      </div>
+      <div class="card-body">
+        <p>Naše prioritou je poskytovat služby nejvyšší kvality a zabezpečit maximální spokojenost našich zákazníků. Snažíme se naslouchat jejich potřebám a přání, aby naše služby byly přesně na míru jejich požadavkům.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h3>Inovativní a moderní přístup</h3>
+      </div>
+      <div class="card-body">
+        <p>Stále se snažíme vylepšovat naše služby a hledat nové způsoby, jak uspokojit potřeby našich zákazníků. Používáme moderní technologie a metodiky a snažíme se být vždy krok před konkurencí.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------------- KONEC Sekce 2 ------------->
+
+<!------------- ZACATEK Sekce 3 ------------->
+
+<form action="submit-form.php" method="post" class="contact-form">
+  <h2>Máte dotaz? Napište nám</h2>
+  <section id="section3" data-section="section3">
+  <div class="form-group">
+    <label for="name">Vaše jméno</label>
+    <input type="text" id="name" name="name" class="form-control" placeholder="Jan Novák" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Váš email</label>
+    <input type="email" id="email" name="email" class="form-control" placeholder="novak@seznam.cz" required>
+  </div>
+  <div class="form-group">
+    <label for="message">Zpráva</label>
+    <textarea id="message" name="message" class="form-control" placeholder="Dobry den, chtel bych nechat vymenit displej na iPhone 11. Jaka by byla cena a kdy je to mozne?" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Odeslat dotaz</button>
+</form>
+
+
+
+<!-------------  KONEC Sekce 2 ------------->
+
+<!------------- SCRIPT IMPORT ------------->
+[js(model-menu)]
+[js(slider)]
+</main>

@@ -1,0 +1,25 @@
+[css(faq)]
+
+<div class="faq-container">
+    <h1 class="faq-header">Stránka na FAQ (FUCK)</h1>
+    <div class="faq-accordion">
+      <button class="faq-accordion-btn">Lorem ipsum? Samozřejmě!</button>
+      <div class="faq-accordion-content">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam at arcu a est sollicitudin euismod. Nullam eget nisl. Fusce nibh. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci.</p>
+      </div>
+      <button class="faq-accordion-btn">Nevíš co je lorem ipsum?</button>
+      <div class="faq-accordion-content">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam at arcu a est sollicitudin euismod. Nullam eget nisl. Fusce nibh. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci.</p>
+      </div>
+      <button class="faq-accordion-btn">Kdybych já byl Lorem ipsum</button>
+      <div class="faq-accordion-content">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam at arcu a est sollicitudin euismod. Nullam eget nisl. Fusce nibh. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci.</p>
+      </div>
+      <button class="faq-accordion-btn">Tak bych byl jen generickej</button>
+      <div class="faq-accordion-content">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam at arcu a est sollicitudin euismod. Nullam eget nisl. Fusce nibh. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci.</p>
+      </div>
+    </div>
+  </div>
+
+[js(faq)]   

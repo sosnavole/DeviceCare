@@ -1,0 +1,108 @@
+[css(framework)]
+<br>
+<br>
+<h1 class="title">SosnaMakesPHPGreatAgain Framework</h1>
+<h1 class="title">Simple dokumentace (2 min čtení)</h1>
+<div class="container">
+		<div class="presentation">
+			<div class="presentation-text">
+            <h1 class="title">Hiearchie složek</h1>
+                <br>
+                <pre>
+SosnaMakesPHPGreatAgain/
+│
+├── app/
+│   ├── controllers/
+│   │   ├── HomeController.php
+│   │   └── ...
+│   ├── models/
+│   │   └── ...
+│   ├── views/
+│   │   ├── home/
+│   │   │   ├── index.sosna
+│   │   │   └── ...
+│   │   └── about/
+│   │   │   └── index.sosna
+│
+├── core/
+│   ├── controller.php/
+│   ├── Database.php/
+│   ├── router.php/
+│   ├── SosnaHelper.php/
+│   ├── SosnaMaster.php/
+│
+├── public/
+│  ├── css/
+│  ├── js/
+│  ├── images/
+│  └── ...
+│
+├── .htaccess
+├── index.php
+</pre>
+
+			</div>
+		</div>
+	</div   
+<br>
+<div class="container">
+		<h1 class="title">View routing</h1>
+		<div class="presentation">
+			<div class="presentation-text">
+                <br>
+                <p> 1. Vytvoříme složku s libovolným názvem v /app/views/. V této složce vytvoříme šablonový soubor index.sosna.</p>
+                <br>               
+                <p> 2. Přídáme cestu v souboru /app/controllers/HomeController. Přidáme code snippet níže a přepíšeme "Složka" na název naší složky a URL na požadovanou cestu za lomenem.</p>
+                <br>
+                <pre>
+                public function URL() {
+                 $this->view('Složka/index');
+                 }
+</pre>
+
+			</div>
+		</div>
+	</div 
+    <br>
+<div class="container">
+		<h1 class="title">Layout</h1>
+		<div class="presentation">
+			<div class="presentation-text">
+                <br>
+                <p> 1. Layout je načítán ze souboru layout.sosna v cestě /app/layout.sosna</p>
+                <br>               
+                <p> 2. Pro reset layoutu k použití jiného specifickou stránkou vložíme soubor "layout+.sosna" do korespondující složky view.</p>
+                <br>
+
+
+			</div>
+		</div>
+	</div 
+    <br>
+<div class="container">
+		<h1 class="title">CSS a JS LINK</h1>
+		<div class="presentation">
+			<div class="presentation-text">
+                <br>
+                <p> Na CSS soubor odkazujeme syntaxem [css(NAZEV)]</p>
+                <br>               
+                <p> Na JS soubor odkazujeme syntaxem [js(NAZEV)]</p>
+
+			</div>
+		</div>
+	</div 
+
+    <br>
+<div class="container">
+		<h1 class="title">Připojení databáze</h1>
+		<div class="presentation">
+			<div class="presentation-text">
+                <br>
+                <p> Připojení k databázi je zajištěno globálně PDO metodou Singleton  </p>
+                <br>               
+                <p> Údaje k databázi zapíšeme do /core/Database.php</p>
+                <br>
+                <p> Připojení k databázi ve View voláme syntaxem [db-connect]
+			</div>
+		</div>
+	</div 

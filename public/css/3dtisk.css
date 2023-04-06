@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .heading h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #01303F;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 25px;
+  }
+  
+  .heading p {
+    font-size: 18px;
+  }
+  
+  .iframe-wrapper {
+    width: 80%;
+    margin-top: 50px;
+    overflow: hidden;
+  }
+  
+  iframe {
+    display: block;
+    width: 100%;
+    height: 1200px; /* Adjust as needed */
+    border: none;
+  }
+  
+  

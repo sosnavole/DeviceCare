@@ -1,0 +1,45 @@
+[css(kontakt)]
+
+<section class="hero">
+      <div class="container">
+        <h2 class="hero-title">Stránka plná lorem ipsum</h2>
+        <p class="hero-text">
+          TOHLE JE RANDOM STRÁNKA ABY NEBYLO TAK PRÁZDNO. Nulla
+          pellentesque tincidunt facilisis. Vivamus euismod finibus velit, nec
+          malesuada nisl consectetur ut.
+        </p>
+        <a href="#" class="hero-button">Learn More</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <div class="feature">
+          <i class="fa fa-laptop feature-icon"></i>
+          <h3 class="feature-title">Responsive Design</h3>
+          <p class="feature-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            pellentesque tincidunt facilisis. Vivamus euismod finibus velit, nec
+            malesuada nisl consectetur ut.
+          </p>
+        </div>
+        <div class="feature">
+          <i class="fa fa-rocket feature-icon"></i>
+          <h3 class="feature-title">Fast Performance</h3>
+          <p class="feature-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            pellentesque tincidunt facilisis. Vivamus euismod finibus velit, nec
+            malesuada nisl consectetur ut.
+          </p>
+        </div>
+        <div class="feature">
+          <i class="fa fa-headphones feature-icon"></i>
+          <h3 class="feature-title">Quality Support</h3>
+          <p class="feature-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            pellentesque tincidunt facilisis. Vivamus euismod finibus velit, nec
+            malesuada nisl consectetur ut.
+          </p>
+        </div>
+      </div>
+    </section>
